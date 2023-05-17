@@ -1,0 +1,23 @@
+CREATE TABLE bakery (id INTEGER PRIMARY KEY, item TEXT, price INTEGER, cost INTEGER, quantity_sold_april INTEGER, quantity_sold_march INTEGER);
+
+INSERT INTO bakery VALUES (1, "butter", 1000,500, 25, 30);
+INSERT INTO bakery VALUES (2, "chocolate chips", 1500, 700, 50, 30);
+INSERT INTO bakery VALUES (3, "red velvet", 1500, 700, 50,70);
+INSERT INTO bakery VALUES (4, "chocolate", 1500, 700, 35,80);
+INSERT INTO bakery VALUES (5, "granola", 1500, 700, 60,50);
+INSERT INTO bakery VALUES (6, "carrot", 1500, 700, 35,40);
+INSERT INTO bakery VALUES (7, "peanut_butter", 1500, 700, 40, 35);
+INSERT INTO bakery VALUES (8, "ginger", 1500, 700, 60,30);
+INSERT INTO bakery VALUES (9, "butter x 3", 2500, 1200, 75, 50);
+INSERT INTO bakery VALUES (10, "choc chips x 3", 4000, 1800, 84, 100);
+INSERT INTO bakery VALUES (11, "red velvet x 3", 4000, 1800, 96,100);
+INSERT INTO bakery VALUES (12, "chocolate x 3", 4000, 1800, 70, 85);
+INSERT INTO bakery VALUES (13, "granola x 3", 4000, 1800, 120, 140);
+INSERT INTO bakery VALUES (14, "peanut butter x 3", 4000, 1800, 89, 70);
+INSERT INTO bakery VALUES (15, "ginger x 3", 4000, 1800, 84, 60);
+
+SELECT * FROM bakery;
+
+SELECT * FROM bakery ORDER BY quantity_sold_april desc
+
+SELECT item, price, quantity_sold_march FROM bakery ORDER BY quantity_sold_march desc
